@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+.top-bar-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22px;
+    color: #FC3939
+}
+
+.nav-menu a {
+    color: #5AF500
+}

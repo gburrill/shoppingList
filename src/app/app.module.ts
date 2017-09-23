@@ -10,11 +10,17 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CollapseModule } from 'ngx-bootstrap';
 import { AlertModule } from 'ngx-bootstrap';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    AboutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +29,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features
     CollapseModule, // Collapsible navbars
     AlertModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    TabsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
